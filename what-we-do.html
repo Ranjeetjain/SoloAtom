@@ -21,7 +21,7 @@ if (isset($_POST['name'])&& isset($_POST['email'])&&isset($_POST['comment']) ) {
 		}
 
 		$sql="INSERT INTO cont(name,email,comment) VALUES('".$name."','".$email."','".$comment."')";
-		mysql_select_db('comp');  	
+		mysql_select_db('comp');
 		$retval=mysql_query($sql);
 		if ( $retval) {
 		die("connection success");
@@ -65,17 +65,17 @@ if (isset($_POST['name'])&& isset($_POST['email'])&&isset($_POST['comment']) ) {
 				</button>
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li ><a href="index.php">Home</a></li>
-						<li class="active"><a href="what-we-do.php">What we do</a></li>
-						<li><a href="who-we-are.php">Who we are</a></li>
-						<li><a href="upcoming-events.php">Upcoming events</a></li>
+						<li ><a href="index.html">Home</a></li>
+						<li class="active"><a href="what-we-do.html">What we do</a></li>
+						<li><a href="who-we-are.html">Who we are</a></li>
+						<li><a href="upcoming-events.html">Upcoming events</a></li>
 						<li data-toggle="modal" data-target="#myModal"><a href="#">Contact us</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="center-section">
-			
+
 			<div class="modal fade" id="myModal" role="dialog">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -88,7 +88,7 @@ if (isset($_POST['name'])&& isset($_POST['email'])&&isset($_POST['comment']) ) {
 								<h4>Name:</h4><input name="fname" class="input" type="text" required="required" placeholder="Ranjeet">
 								<h4>E-mail:</h4><input name="e-mail" class="input" type="email" required="required" placeholder="Ranjeetjain3@gmail.com">
 								<h4>Your Comment</h4><textarea name="comment" class="input-cont" required="required" placeholder="   Your comment please"></textarea>
-								
+
 								<center><input type="submit" class="btn btn-success btn-lg"></input></center>
 							</form>
 						</div>
@@ -97,7 +97,7 @@ if (isset($_POST['name'])&& isset($_POST['email'])&&isset($_POST['comment']) ) {
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<div class="home jumbotron">
 			<div style="margin-left:20px;margin-right:20px;">
@@ -108,8 +108,8 @@ if (isset($_POST['name'])&& isset($_POST['email'])&&isset($_POST['comment']) ) {
 					<h3 style="font-family:'Trench';font-weight:bolder;font-size:35px;">Out-station activities</h3> <h4 style="text-align:justify;font-family: 'semangat';font-size:30px;"> This will provide an opportunity for you to go out of town for the work. Work such as Product launch activities, promotion activities, etc. might keep you busy. Travelling is always fun! Yeehaw!</h4>
 					<h3 style="font-family:'Trench';font-weight:bolder;font-size:35px;">Promotions &amp; Marketing</h3>  <h4 style="text-align:justify;font-family: 'semangat';font-size:30px;">For any product to survive in the market promotions play an important role. The make the public to know about the product work such as Pamphlets distribution, product survey from clients, promoting products at various other events, etc. will come your way. Catch as many as you can!</h4>
 					<h3 style="font-family:'Trench'; font-weight:bolder;font-size:35px;">Wedding &amp; Parties</h3>  <h4 style="text-align:justify;font-family: 'semangat';font-size:30px;">This requires smart and well-dressed candidates, which you are. Hospitality, decorations, skillful works, transportations and logistics, welcoming, etc. will be part of your work. Handle with care, the people!</h4>
-					
-				
+
+
 				</div>
 				</div>
 		</div>
